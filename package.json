@@ -1,0 +1,14 @@
+{
+  "name": "ssq-online",
+  "version": "1.0.0",
+  "description": "双色球选号助手联网版 - 自动同步开奖数据",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "update": "node -e \"require('./server.js').update(true).then(r=>console.log(r))\""
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=14"
+  }
+}

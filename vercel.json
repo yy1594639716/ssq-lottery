@@ -1,0 +1,24 @@
+{
+  "name": "ssq-lottery",
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/ssq.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/ssq",
+      "dest": "/api/ssq.js"
+    },
+    {
+      "src": "/ssq-data.json",
+      "dest": "/ssq-data.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/ssq.html"
+    }
+  ]
+}
